@@ -1,0 +1,72 @@
+{
+  "models": {
+    "gpt-neo:2.7b": {
+      "type": "transformers",
+      "name": "EleutherAI/gpt-neo-2.7B",
+      "context_length": 2048,
+      "description": "2.7B parameter GPT-Neo model",
+      "use_float16": false
+    },
+    "gpt-j:6b": {
+      "type": "transformers",
+      "name": "EleutherAI/gpt-j-6B",
+      "context_length": 2048,
+      "description": "6B parameter GPT-J model",
+      "use_float16": true
+    },
+    "gpt-oss:120b-gguf": {
+      "type": "gguf",
+      "repo_id": "unsloth/gpt-oss-120b-GGUF",
+      "context_length": 4096,
+      "description": "120B parameter quantized GGUF model"
+    },
+    "llama2:7b-gguf": {
+      "type": "gguf",
+      "repo_id": "TheBloke/Llama-2-7B-GGUF",
+      "context_length": 4096,
+      "description": "Llama 2 7B quantized GGUF model"
+    },
+    "llama2:13b-gguf": {
+      "type": "gguf",
+      "repo_id": "TheBloke/Llama-2-13B-GGUF",
+      "context_length": 4096,
+      "description": "Llama 2 13B quantized GGUF model"
+    },
+    "llama2:70b-gguf": {
+      "type": "gguf",
+      "repo_id": "TheBloke/Llama-2-70B-GGUF",
+      "context_length": 4096,
+      "description": "Llama 2 70B quantized GGUF model"
+    },
+    "mistral:7b-gguf": {
+      "type": "gguf",
+      "repo_id": "TheBloke/Mistral-7B-Instruct-v0.2-GGUF",
+      "context_length": 32768,
+      "description": "Mistral 7B Instruct quantized GGUF model"
+    },
+    "mixtral:8x7b-gguf": {
+      "type": "gguf",
+      "repo_id": "TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF",
+      "context_length": 32768,
+      "description": "Mixtral 8x7B MoE quantized GGUF model"
+    },
+    "codellama:7b-gguf": {
+      "type": "gguf",
+      "repo_id": "TheBloke/CodeLlama-7B-Instruct-GGUF",
+      "context_length": 16384,
+      "description": "Code Llama 7B Instruct quantized GGUF model"
+    },
+    "phi2:3b-gguf": {
+      "type": "gguf",
+      "repo_id": "TheBloke/phi-2-GGUF",
+      "context_length": 2048,
+      "description": "Microsoft Phi-2 2.7B quantized GGUF model"
+    }
+  },
+  "default_model": "gpt-neo:2.7b",
+  "default_settings": {
+    "temperature": 0.7,
+    "max_tokens": 512,
+    "top_p": 0.95
+  }
+}
